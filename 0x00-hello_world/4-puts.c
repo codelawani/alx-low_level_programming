@@ -7,7 +7,7 @@
 #include <stdio.h>
 int main(void)
 {
-	char print_text[] = "Programming is like building a multilingual puzzle;
+	char print_text[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(print_text);
 
