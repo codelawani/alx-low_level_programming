@@ -12,9 +12,13 @@ int main(void)
 
 	x = ',';
 	z = ' ';
-	for (y = 0 ; y < 10 ; ++y)
+	for (y = 0 ; y <= 9 ; y++)
 	{
 	putchar (y % 10 + '0');
+	if (y == 9)
+	{
+	continue;
+	}
 	putchar (x);
 	putchar (z);
 	}
