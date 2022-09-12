@@ -17,10 +17,6 @@ int main(void)
 	{
 	continue;
 	}
-	if (a + b >= 17)
-	{
-	break;
-	}
 	putchar (a % 10 + '0');
 	putchar (b % 10 + '0');
 	if (a == 8 && b == 9)
