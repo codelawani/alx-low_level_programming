@@ -1,43 +1,31 @@
-#include <stdio.h>
 /**
-*main - Prints text to output.
-*Description - a combination of double digit in pairs
+*main - Prints numbers
+*Description - Prints double digit combinations of 0 to 9.
 *Return: 0
 */
+#include <stdio.h>
 int main(void)
 {
-
 	int a;
 	int b;
-	int c;
-	int d;
 
-	for (a = 0 ; a <= 9 ; a++)
+	for (a = 0 ; a <= 98 ; a++)
 	{
-	for (b = 0 ; b <= 8 ; b++)
+	for (b = a + 1 ; b <= 99 ; b++)
 	{
-	for (c = 0 ; c <= 9; c++)
-	{
-	for (d = 0 ; d < 10 ; d++)
-	{
-	if (((c + d) - (a + b)) >= 1)
-	{
-	putchar (a + '0');
-	putchar (b + '0');
+	putchar (a / 10 + '0');
+	putchar (a % 10 + '0');
 	putchar (' ');
-	putchar (c + '0');
-	putchar (d + '0');
-	if (a + b + c + d == 35)
+	putchar (b / 10 + '0');
+	putchar (b % 10 + '0');
+	if (a + b == 197)
 	{
 	continue;
 	}
 	putchar (',');
 	putchar (' ');
 	}
-	}
-	}
-	}
-	}
 	putchar ('\n');
+	}
 	return (0);
 }
