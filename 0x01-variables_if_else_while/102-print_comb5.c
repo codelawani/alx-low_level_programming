@@ -30,7 +30,7 @@ int main(void)
 	putchar (d % 10 + '0');
 	if (a == 9 && b == 8 && c == 9 && d == 9)
 	{
-	break;
+	continue;
 	}
 	putchar (',');
 	putchar (' ');
