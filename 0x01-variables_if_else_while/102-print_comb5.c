@@ -19,7 +19,7 @@ int main(void)
 	{
 	for (d = 1 ; d <= 9 ; d++)
 	{
-	if ((a || b) > (c || d) || ((a == b) == (c == d)))
+	if (((a || b) > (c || d)) || ((a == c) && (b == d)))
 	{
 	continue;
 	}
