@@ -1,6 +1,6 @@
 /**
-*main - Prints numbers
-*Description - Prints digits from 0 to 9
+*main - Prints text
+*Description - Prints hexadecimals
 *Return: 0
 */
 #include <stdio.h>

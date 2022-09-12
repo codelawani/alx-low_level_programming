@@ -1,6 +1,6 @@
 /**
 *main - Prints numbers
-*Description - Prints digits from 0 to 9
+*Description - Prints digits 0 to 9 but with a comma seperation.
 *Return: 0
 */
 #include <stdio.h>
