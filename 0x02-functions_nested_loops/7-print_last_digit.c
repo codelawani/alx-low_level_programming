@@ -2,11 +2,12 @@
 /**
 * print_last_digit - Prints last digit.
 * @c: is the parameter being used.
-* Return: remainder
+* Return: last digit
 */
 int print_last_digit(int c)
 {
 	int d;
+
 	d = c % 10;
 	if (d < 0)
 	d *= -1;
