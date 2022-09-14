@@ -33,7 +33,7 @@ void times_table(void)
 	}
 	x++;
 	_putchar('\n');
-	if (x == 9)
+	if (z == 81)
 	{
 	break;
 	}
