@@ -1,11 +1,12 @@
 #include "main.h"
 /**
-* add(int, int) - adds two integers
-* @x, @y - Parameters to be added.
+* add - adds two integers
+* @x: first operand
+* @y: second operand
 * Return: result of addition.
 */
 int add(int x, int y)
-{	
+{
 	int sum;
 
 	sum = x + y;
