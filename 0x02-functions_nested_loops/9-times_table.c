@@ -16,12 +16,12 @@ void times_table(void)
 	z = x * y;
 	if (y != 0)
 	{
-	putchar(',');
-	putchar(' ');
+	_putchar(',');
+	_putchar(' ');
 	}
 	if ((z / 10) == 0)
 	{
-	putchar(' ');
+	_putchar(' ');
 	}
 	if ((z / 10) != 0)
 	{
