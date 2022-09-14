@@ -32,7 +32,10 @@ void times_table(void)
 	y++;
 	}
 	x++;
+	if (x != 9)
+	{
 	_putchar('\n');
+	}
 	}
 }
 
