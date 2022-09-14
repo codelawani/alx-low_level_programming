@@ -12,6 +12,7 @@ void times_table(void)
 	{
 	y = 0;
 	while (y <= 9)
+	{
 	z = x * y;
 	if ((z / 10) != 0)
 	{
