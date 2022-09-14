@@ -14,29 +14,24 @@ void times_table(void)
 	while (y <= 9)
 	{
 	z = x * y;
+	if (y != 0)
+	{
+	putchar(',');
+	putchar(' ');
+	}
+	if ((z / 10) == 0)
+	{
+	putchar(' ');
+	}
 	if ((z / 10) != 0)
 	{
 	_putchar(z / 10 + '0');
 	}
 	_putchar(z % 10 + '0');
-	if (y == 9)
-	{
-	break;
-	}
-	_putchar(',');
-	_putchar(' ');
-	if ((z / 10) == 0)
-	{
-	_putchar(' ');
-	}
 	y++;
 	}
 	x++;
 	_putchar('\n');
-	if (z == 81)
-	{
-	break;
-	}
 	}
 }
 
