@@ -19,7 +19,7 @@ void times_table(void)
 	_putchar(',');
 	_putchar(' ');
 	}
-	if ((z / 10) == 0 && z != 0)
+	if ((z / 10) == 0 && y != 0)
 	{
 	_putchar(' ');
 	}
