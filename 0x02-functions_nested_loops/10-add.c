@@ -5,7 +5,9 @@
 * Return: result of addition.
 */
 int add(int x, int y)
-{
+{	
+	int sum;
+
 	sum = x + y;
 	return (sum);
 }
