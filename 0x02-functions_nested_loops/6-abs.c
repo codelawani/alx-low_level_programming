@@ -4,10 +4,10 @@
 * @n: is the parameter being used.
 * Return: absolute value.
 */
-int _abs(int)
+int _abs(int r)
 {
-	if (int < 0)
+	if (r < 0)
 	{
-	return(-int)
+	return(-r)
 	}
 }
