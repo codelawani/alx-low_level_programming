@@ -22,12 +22,12 @@ void times_table(void)
 	{
 	break;
 	}
-	putchar(',');
-	putchar(' ');
+	_putchar(',');
+	_putchar(' ');
 	y++;
 	}
 	x++;
-	putchar('\n');
+	_putchar('\n');
 	}
-	}
+}
 
