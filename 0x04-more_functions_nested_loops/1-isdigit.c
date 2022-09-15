@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _isdigit - Prints uppercase letters.
+* _isdigit - Prints for digits 0 to 9.
 * @c: character to be checked.
 * Return: 1 if true and 0 if false
 */
