@@ -6,13 +6,11 @@
 
 void _puts(char *str)
 {
-	int c, i;
+	int i;
 
-	c = 0;
 	i = 0;
-	while (str[i] != 0)
+	while (str[i] != '\0')
 	{
-	c++;
 	i++;
 	_putchar(str[i]);
 	}
