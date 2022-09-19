@@ -9,11 +9,9 @@ void _puts(char *str)
 	int i, c;
 
 	i = 0;
-	c = 0;
-	while (c < i)
+	while (str[i] != 0)
 	{
 	i++;
-	c++;
 	_putchar(str[i]);
 	}
 }
