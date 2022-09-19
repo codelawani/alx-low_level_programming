@@ -6,9 +6,8 @@
 
 void _puts(char *str)
 {
-	int i, c;
+	int i;
 
-	i = 0;
 	while (str[i] != 0)
 	{
 	i++;
