@@ -14,5 +14,6 @@ void _puts(char *str)
 	{
 	c++;
 	i++;
-	}
 	_putchar(str[i]);
+	}
+}
