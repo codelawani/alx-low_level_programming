@@ -1,0 +1,1 @@
+This directory contains my solutions to tasks om more pointers, arrays and strings. This is to pracrice problems on these concepts in order to improve my understanding as well as problem solving skills.
