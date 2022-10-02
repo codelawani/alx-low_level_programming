@@ -9,12 +9,14 @@
 */
 
 int main(int argc, char **argv)
-{	
+{
 	int i, j, result, test;
-	
+
 	result = 0;
 	if (argc == 1)
 	printf("0\n");
+	else
+	{
 	for (j = 1 ; argv[j] ; j++)
 	{
 	for (i = 0 ; argv[j][i] ; i++)
@@ -23,7 +25,7 @@ int main(int argc, char **argv)
 		if (test == 0)
 		break;
 	}
-		if(test == 0)
+		if (test == 0)
 		{
 		printf("Error\n");
 		return (1);
@@ -32,5 +34,6 @@ int main(int argc, char **argv)
 		result += atoi(argv[j]);
 	}
 		printf("%d\n", result);
+	}
 	return (0);
 }
