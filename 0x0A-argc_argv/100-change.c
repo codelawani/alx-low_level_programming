@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 /**
 * main - prints change
 * Description - A program that prints mininimum number
@@ -6,8 +8,6 @@
 * @argv: Arguments passed
 * Return: 0
 */
-#include <stdio.h>
-#include <stdlib.h>
 int main(int argc, char **argv)
 {
 	int i, cents, x, result;
@@ -21,8 +21,6 @@ int main(int argc, char **argv)
 		return (1);
 	}
 		cents = atoi(argv[1]);
-	if (cents < 0)
-		printf("0\n");
 	while (cents > 0)
 	{
 	for (i = 0 ; i < 5 ; i++)
