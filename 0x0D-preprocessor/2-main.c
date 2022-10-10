@@ -12,4 +12,5 @@ int main(void)
 
 	filename = strchr("/"__FILE__, '/');
 	printf("%s\n", filename + 1);
+	return (0);
 }
