@@ -8,5 +8,8 @@
 
 int main(void)
 {
-	printf("%s\n", __FILE__);
+	char *filename;
+
+	filename = strchr("/"__FILE__, '/');
+	printf("%s\n", filename + 1);
 }
