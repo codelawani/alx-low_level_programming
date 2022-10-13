@@ -1,10 +1,6 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 
-/**
-* Desc: Contains prototypes for all functions used in this directory.
-*/
-
 #include <stdarg.h>
 #include <stdio.h>
 int sum_them_all(const unsigned int n, ...);
