@@ -6,11 +6,10 @@
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	unsigned int index, num;
+	unsigned int index;
+	int num;
 	va_list nums;
 
-	if (n == 0)
-		return;
 	va_start(nums, n);
 
 	for (index = 0 ; index < n ; index++)
