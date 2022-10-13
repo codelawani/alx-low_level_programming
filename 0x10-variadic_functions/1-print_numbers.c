@@ -6,9 +6,8 @@
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	unsigned int index;
+	unsigned int index, num;
 	va_list nums;
-	int num;
 
 	if (n == 0)
 		return;
