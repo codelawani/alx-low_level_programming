@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 	{
 		if (format[index] == arg_t[j] && c)
 		{
-		printf(",");
+		printf(", ");
 		break;
 		}j++;
 	}
