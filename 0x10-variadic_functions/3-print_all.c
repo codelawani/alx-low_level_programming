@@ -31,9 +31,9 @@ void print_all(const char * const format, ...)
 		ss = "(nil)";
 		printf("%s%s", separator, ss);
 		break;
-	default:
+/*	default:
 		index++;
-		continue;
+		continue;*/
 	}
 	separator = ", ";
 	index++;

@@ -1,5 +1,3 @@
-include "variadic_functions.h"
-
 /**
 * print_strings - Prints strings, followed by a new line.
 * @separator: seperator between strings
