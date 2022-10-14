@@ -9,7 +9,7 @@ void print_all(const char * const format, ...)
 	unsigned int index = 0;
 	char *ss, *separator;
 
-	
+
 	separator = "";
 	va_start(str, format);
 	while (format && format[index])
