@@ -28,12 +28,12 @@ void print_all(const char * const format, ...)
 	case 's':
 		ss = va_arg(str, char *);
 		if (!ss)
-		{
-		printf("(nil)");
-		break;
-		}
+		ss = "(nil)";
 		printf("%s%s", separator, ss);
 		break;
+	default:
+		index++;
+		continue;
 	}
 	separator = ", ";
 	index++;
