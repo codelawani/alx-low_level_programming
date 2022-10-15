@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    print_all("tehu", 'B', 3, "stSchool");
+    print_all("eifs", 4, 3.8, "stSchool");
     return (0);
 }
