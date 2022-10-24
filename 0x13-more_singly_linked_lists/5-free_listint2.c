@@ -2,7 +2,7 @@
 
 /**
 * free_listint2  - frees a list
-* Pointer to first node
+* @head:  Pointer to address of first node
 */
 
 void free_listint2(listint_t **head)
