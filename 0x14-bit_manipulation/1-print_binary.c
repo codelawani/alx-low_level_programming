@@ -6,16 +6,16 @@
  */
 void print_binary(unsigned long int n)
 {
-	int p, c, reducer;
+	int p, c = 0;
+	long unsigned int reducer;
 
 	if (!n)
 		_putchar('0');
 
-	for (p == 7 ; p == 0 ; p--)
+	for (p = 32 ; p >= 0 ; p--)
 	{
 		reducer = reduce(p);
-
-		if (reducer < n)
+		if (reducer <= n)
 		{
 			n -= reducer;
 			_putchar('1'), c = 1;
@@ -32,9 +32,9 @@ void print_binary(unsigned long int n)
  * Return: multiple of 2;
  */
 
-int reduce(int p)
+long unsigned int reduce(int p)
 {
-	int num = 1;
+	long unsigned int num = 1;
 
 	while (p--)
 		num *= 2;
