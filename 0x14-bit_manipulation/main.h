@@ -6,6 +6,6 @@
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
 int _putchar(char c);
-long unsigned int reduce(int p);
+unsigned long int reduce(int p);
 
 #endif

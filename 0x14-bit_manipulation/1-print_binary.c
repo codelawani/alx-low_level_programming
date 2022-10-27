@@ -7,7 +7,7 @@
 void print_binary(unsigned long int n)
 {
 	int p, c = 0;
-	long unsigned int reducer;
+	unsigned long int reducer;
 
 	if (!n)
 		_putchar('0');
@@ -32,9 +32,9 @@ void print_binary(unsigned long int n)
  * Return: multiple of 2;
  */
 
-long unsigned int reduce(int p)
+unsigned long int reduce(int p)
 {
-	long unsigned int num = 1;
+	unsigned long int num = 1;
 
 	while (p--)
 		num *= 2;
