@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 	if (!n)
 		_putchar('0');
 
-	for (p = 32 ; p >= 0 ; p--)
+	for (p = 63 ; p >= 0 ; p--)
 	{
 		reducer = reduce(p);
 		if (reducer <= n)
