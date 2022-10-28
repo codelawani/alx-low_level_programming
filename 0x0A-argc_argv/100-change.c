@@ -14,7 +14,6 @@ int main(int argc, char **argv)
 	int coin[5] = {25, 10, 5, 2, 1};
 
 	result = 0;
-	x = 1;
 	if (argc != 2)
 	{
 		printf("Error\n");
