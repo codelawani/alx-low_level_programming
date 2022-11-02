@@ -37,8 +37,8 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s", av[1]);
 		exit(98);
 	}
-	close_file(fd1);
-	close_file(fd2);
+	close_file(&fd1);
+	close_file(&fd2);
 
 	return (0);
 }
@@ -48,13 +48,13 @@ int main(int ac, char **av)
 * @fd: file desciptor of file
 * Return: 0 on success or -1 on failure
 */
-int close_file(int fd)
+int close_file(int *fd)
 {
-	int f_close = close(fd);
+	int f_close = close(*fd);
 
 	if (f_close < 0)
 	{
-		dprintf(2, ": Can't close fd %d", fd);
+		dprintf(2, ": Can't close fd %d", *fd);
 		exit(100);
 	}
 	return (f_close);
