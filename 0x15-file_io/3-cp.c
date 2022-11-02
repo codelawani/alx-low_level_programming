@@ -9,7 +9,7 @@
 
 int main(int ac, char **av)
 {
-	int fd, f_read, f_write;
+	int fd1, fd2, f_read;
 	char buf[1024];
 
 	if (ac != 3)
@@ -17,32 +17,29 @@ int main(int ac, char **av)
 		dprintf(2, "Usage: cp file_from file_to");
 		exit(97);
 	}
-	if (av[1] == NULL)
+	fd1 = open(av[1], O_RDONLY);
+	if (fd1 < 0)
 	{
 		dprintf(2, "Error: Can't read from file %s", av[1]);
 		exit(98);
 	}
-	fd = open(av[1], O_RDONLY);
-	f_read = read(fd, buf, 1024);
+	fd2 = open(av[2], O_CREAT | O_WRONLY |  O_TRUNC, 0664);
+	while ((f_read = read(fd1, buf, 1024)) > 0)
+	{
+		if (write(fd2, buf, f_read) != f_read || fd2 < 0)
+		{
+		dprintf(2, "Error: Can't write to %s", av[2]);
+			exit(99);
+		}
+	}
 	if (f_read < 0)
 	{
-		dprintf(2, "Error: Can't read from file     %s", av[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s", av[1]);
 		exit(98);
 	}
-	close_file(fd);
-	fd = open(av[2], O_CREAT | O_WRONLY |  O_TRUNC, 0664);
-	if (fd < 0)
-	{
-		dprintf(2, "Error: Can't write to %s", av[2]);
-		exit(99);
-	}
-	f_write = write(fd, buf, f_read);
-	if (f_write < 0)
-	{
-		dprintf(2, "Error: Can't write to %s",     av[2]);
-		exit(99);
-	}
-	close_file(fd);
+	close_file(fd1);
+	close_file(fd2);
+
 	return (0);
 }
 
