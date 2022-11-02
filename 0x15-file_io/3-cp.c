@@ -10,38 +10,37 @@
 int main(int ac, char **av)
 {
 	int fd, f_read, f_write;
-	char *buf;
+	char buf[1024];
 
 	if (ac != 3)
 	{
-		exit(97);
 		dprintf(2, "Usage: cp file_from file_to");
+		exit(97);
 	}
 	if (av[1] == NULL)
 	{
-		exit(98);
 		dprintf(2, "Error: Can't read from file %s", av[1]);
+		exit(98);
 	}
-	buf = malloc(1024 * sizeof(char));
 	fd = open(av[1], O_RDONLY);
 	f_read = read(fd, buf, 1024);
 	if (f_read < 0)
 	{
-		exit(98);
 		dprintf(2, "Error: Can't read from file     %s", av[1]);
+		exit(98);
 	}
 	close_file(fd);
 	fd = open(av[2], O_CREAT | O_WRONLY |  O_TRUNC, 0664);
 	if (fd < 0)
 	{
-		exit(99);
 		dprintf(2, "Error: Can't write to %s", av[2]);
+		exit(99);
 	}
 	f_write = write(fd, buf, f_read);
 	if (f_write < 0)
 	{
-		exit(99);
 		dprintf(2, "Error: Can't write to %s",     av[2]);
+		exit(99);
 	}
 	close_file(fd);
 	return (0);
@@ -58,8 +57,8 @@ int close_file(int fd)
 
 	if (f_close < 0)
 	{
-		exit(100);
 		dprintf(2, ": Can't close fd %d", fd);
+		exit(100);
 	}
 	return (f_close);
 }
