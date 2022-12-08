@@ -4,11 +4,13 @@
  * @h: pointer to address of head node
  * @idx: index where node is to be inserted
  * @n: integer
+ * Return: address of new node or NULL on failure
 */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new, *current = *h;
 	unsigned int size = 1;
+
 	if (current == NULL)
 		return (NULL);
 	if (!idx)
@@ -22,7 +24,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (NULL);
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
-		return NULL;
+		return (NULL);
 	new->n = n;
 	new->prev = NULL;
 	new->next = NULL;
