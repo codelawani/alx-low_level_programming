@@ -1,0 +1,1 @@
+This directory contains solutions to tasks given related to dynamic libraries
