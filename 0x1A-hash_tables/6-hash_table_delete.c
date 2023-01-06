@@ -1,12 +1,9 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - retrieves a value associated with a key.
+ * hash_table_delete - retrieves a value associated with a key.
  * @ht: hash table
- * @key: key to access value
  *
- * Return: value associated with the element,
- * or NULL if key couldn’t be found
  */
 
 void hash_table_delete(hash_table_t *ht)
