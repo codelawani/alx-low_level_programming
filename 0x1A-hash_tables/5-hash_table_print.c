@@ -1,5 +1,11 @@
 #include "hash_tables.h"
 
+/**
+ * hash_table_print - retrieves a value associated with a key.
+ * @ht: hash table
+ *
+ */
+
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
